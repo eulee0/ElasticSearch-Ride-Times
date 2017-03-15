@@ -1,0 +1,25 @@
+{
+  "name": "elasticsearch-ride-times",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "elasticsearch": "^12.1.3",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eulee0/ElasticSearch-Ride-Times.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eulee0/ElasticSearch-Ride-Times/issues"
+  },
+  "homepage": "https://github.com/eulee0/ElasticSearch-Ride-Times#readme"
+}
