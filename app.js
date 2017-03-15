@@ -33,7 +33,11 @@ function getData() {
               waittime: parseInt(items[0].description[0]),
             }
           }, function (error, response) {
-            console.log("put item " + items[i].title[0] + " " + parseInt(items[0].description[0]) + " successfully.")
+            if (!error){
+            console.log("put item successfully.")
+          } else {
+            console.log(error);
+          }
           })
         }
       });
