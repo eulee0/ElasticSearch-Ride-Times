@@ -32,7 +32,7 @@ function getData() {
             id: i,
             body: {
               title: items[i].title[0],
-              waittime: items[i].description[0],
+              waittime: parseInt(items[i].description[0]),
             }
           }, function (error, response) {
             if (!error){
@@ -49,4 +49,4 @@ function getData() {
 
 setInterval(function() {
   getData();
-}, 6000);
+}, 600000);
