@@ -26,7 +26,7 @@ function getData() {
         for(var i = 0; i < items.length; i++) {
           client.index({
             index: 'ride-times',
-            type: 'rides',
+            type: 'times',
             id: i,
             body: {
               title: items[i].title[0],
@@ -43,4 +43,4 @@ function getData() {
 
 setInterval(function() {
   getData();
-}, 6000);
+}, 600000);
