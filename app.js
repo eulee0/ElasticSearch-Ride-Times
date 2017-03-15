@@ -49,4 +49,4 @@ function getData() {
 
 setInterval(function() {
   getData();
-}, 6000);
+}, 600000);
