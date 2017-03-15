@@ -3,7 +3,7 @@ var request = require('request');
 var parseString = require('xml2js').parseString;
 
 var client = new elasticsearch.Client({
-  host: 'https://search-times-dovucerazici2axcenrztttyxy.us-west-2.es.amazonaws.com/',
+  host: 'https://search-time-auzvq7ktamc4drq7zioioachqi.us-west-2.es.amazonaws.com/',
   log: 'info'
 });
 
@@ -27,8 +27,8 @@ function getData() {
           console.log(items[i].title[0], parseInt(items[i].description[0], 10));
 
           client.index({
-            index: 'times',
-            type: 'times',
+            index: 'time',
+            type: 'time',
             id: i,
             body: {
               title: items[i].title[0],
