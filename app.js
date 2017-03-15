@@ -24,7 +24,6 @@ function getData() {
         var items = result.rss.channel[0].item;
         //console.log(items);
         for(var i = 0; i < items.length; i++) {
-
           console.log(items[i].title[0], items[i].description[0]);
 
           client.index({
@@ -41,7 +40,7 @@ function getData() {
           } else {
             console.log(error);
           }
-          })
+        });
         }
       });
     }
