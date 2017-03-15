@@ -24,7 +24,7 @@ function getData() {
         var items = result.rss.channel[0].item;
 
         for(var i = 0; i < items.length; i++) {
-          console.log(items[i].title[0], parseInt(items[i].description[0]));
+          console.log(items[i].title[0], parseInt(items[i].description[0]), 10);
 
           client.index({
             index: 'times',
@@ -32,7 +32,7 @@ function getData() {
             id: i,
             body: {
               title: items[i].title[0],
-              waittime: parseInt(items[i].description[0]),
+              waittime: parseInt(items[i].description[0], 10),
             }
           }, function (error, response) {
             if (!error){
