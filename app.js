@@ -25,7 +25,7 @@ function getData() {
         console.log(items);
         for(var i = 0; i < items.length; i++) {
           client.index({
-            index: 'ride-times',
+            index: 'times',
             type: 'times',
             id: i,
             body: {
