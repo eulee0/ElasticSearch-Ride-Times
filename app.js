@@ -32,7 +32,7 @@ function getData() {
             id: i,
             body: {
               title: items[i].title[0],
-              waittime: parseInt(items[0].description[0]),
+              waittime: items[0].description[0],
             }
           }, function (error, response) {
             if (!error){
