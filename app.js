@@ -24,7 +24,7 @@ function getData() {
         var items = result.rss.channel[0].item;
 
         for(var i = 0; i < items.length; i++) {
-          console.log(items[i].title[0], parseInt(items[i].description[0]), 10);
+          console.log(items[i].title[0], parseInt(items[i].description[0], 10));
 
           client.index({
             index: 'times',
