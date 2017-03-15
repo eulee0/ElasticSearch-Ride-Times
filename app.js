@@ -22,7 +22,7 @@ function getData() {
     if (!error && response.statusCode == 200) {
       parseString(body, function (err, result) {
         var items = result.rss.channel[0].item;
-        //console.log(items);
+
         for(var i = 0; i < items.length; i++) {
           console.log(items[i].title[0], items[i].description[0]);
 
@@ -32,7 +32,7 @@ function getData() {
             id: i,
             body: {
               title: items[i].title[0],
-              waittime: items[0].description[0],
+              waittime: items[i].description[0],
             }
           }, function (error, response) {
             if (!error){
